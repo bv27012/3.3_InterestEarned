@@ -19,10 +19,10 @@ int main()
 	cout << endl << "How many times is the interest compounded per year?" << endl;
 	cin >> compoundInput;
 
-	double finalAmount = principal * pow((1 + rateD) / compoundInput, compoundInput);
+	double finalAmount = principal * pow(1 + (rateD / compoundInput), compoundInput);
 	double interest = finalAmount - principal;
 
-	cout << "Final Amount: $" << finalAmount << endl;
+	cout << endl << "Final Amount: $" << finalAmount << endl;
 	cout << "Interest Earned: $" << interest << endl;
 
 	return 0;
